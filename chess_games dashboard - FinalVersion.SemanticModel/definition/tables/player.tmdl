@@ -1,0 +1,104 @@
+table player
+	lineageTag: 8b939368-2ead-463d-af6e-a49d9ebad151
+
+	measure 'Games as White' =
+			
+			VAR SelectedPlayer = VALUES(player[player_id])
+			RETURN
+			    CALCULATE(
+			        COUNTROWS(chess_games),
+			        FILTER(
+			            chess_games,
+			            chess_games[white_id] IN SelectedPlayer
+			        )
+			    )
+		formatString: 0
+		lineageTag: 4cd50d0f-eaa0-458e-9f89-bf131c945b0c
+
+	measure 'Games as Black' =
+			
+			VAR SelectedPlayer = VALUES(player[player_id])
+			RETURN
+			    CALCULATE(
+			        COUNTROWS(chess_games),
+			        FILTER(
+			            chess_games,
+			            chess_games[black_id] IN SelectedPlayer
+			        )
+			    )
+		formatString: 0
+		lineageTag: 172d952e-6db2-43f3-96ec-40e1ed0bcc42
+
+	column player_id
+		dataType: string
+		lineageTag: 3059c0eb-807e-4ec1-9956-ba92ed9aa48e
+		summarizeBy: none
+		sourceColumn: player_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_games
+		dataType: int64
+		formatString: 0
+		lineageTag: ec2404c9-9474-4b81-9a16-4f42fa328947
+		summarizeBy: none
+		sourceColumn: total_games
+
+		annotation SummarizationSetBy = Automatic
+
+	column games_played_as_white
+		dataType: double
+		formatString: 0
+		lineageTag: f6f28a4a-daf9-461a-8bed-f92b7d5d9869
+		summarizeBy: none
+		sourceColumn: games_played_as_white
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'games_played _as_black'
+		dataType: double
+		formatString: 0
+		lineageTag: 1bdef1c5-86da-497b-98fc-9101f8308056
+		summarizeBy: none
+		sourceColumn: games_played _as_black
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'total_games Hierarchy'
+		lineageTag: 660b588e-102d-4f11-b1e1-ad0509cd4f49
+
+		level total_games
+			lineageTag: 9c39907c-0403-43ef-8534-772c64388914
+			column: total_games
+
+		level games_played_as_white
+			lineageTag: f5fa2ca3-d117-47fd-87f7-1fea5f4b7189
+			column: games_played_as_white
+
+		level 'games_played _as_black'
+			lineageTag: 1568ab79-b431-40ca-9f8b-dbd721a05ff2
+			column: 'games_played _as_black'
+
+	partition player = m
+		mode: import
+		source =
+				let
+				    Source = Table.NestedJoin(P1, {"white_id"}, P2, {"black_id"}, "Players (2)", JoinKind.FullOuter),
+				    #"Expanded Players (2)" = Table.ExpandTableColumn(Source, "Players (2)", {"black_id", "games_played _as_black"}, {"black_id", "games_played _as_black"}),
+				    #"Added Custom" = Table.AddColumn(#"Expanded Players (2)", "player_id", each if [white_id] <> null then [white_id] else [black_id]),
+				    #"Removed Columns" = Table.RemoveColumns(#"Added Custom",{"white_id", "black_id"}),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Removed Columns",{"player_id", "game_played_as_white", "games_played _as_black"}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Reordered Columns",null,0,Replacer.ReplaceValue,{"games_played _as_black"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value",null,0,Replacer.ReplaceValue,{"game_played_as_white"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Replaced Value1",{{"game_played_as_white", "games_played_as_white"}}),
+				    #"Added Custom1" = Table.AddColumn(#"Renamed Columns", "total_games", each [games_played_as_white] + [games_played _as_black]),
+				    #"Sorted Rows" = Table.Sort(#"Added Custom1",{{"total_games", Order.Descending}}),
+				    #"Reordered Columns1" = Table.ReorderColumns(#"Sorted Rows",{"player_id", "total_games", "games_played_as_white", "games_played _as_black"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Reordered Columns1",{{"total_games", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

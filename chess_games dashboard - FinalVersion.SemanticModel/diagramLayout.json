@@ -1,0 +1,74 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 390.62180516187573,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1398,
+            "y": 0
+          },
+          "nodeIndex": "chess_games",
+          "nodeLineageTag": "5b2d038d-b448-4d20-addd-7801a2ed9659",
+          "size": {
+            "height": 648.33333333333337,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 86
+          },
+          "nodeIndex": "P1",
+          "nodeLineageTag": "1dbe09d6-a00c-40f2-b040-0a9ab151dc02",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 290.66666666666669,
+            "y": 102.66666666666667
+          },
+          "nodeIndex": "P2",
+          "nodeLineageTag": "039f01a3-97d3-408f-88e2-f5db6c413fe4",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1073.2869686520812,
+            "y": 196.95242019900306
+          },
+          "nodeIndex": "player",
+          "nodeLineageTag": "8b939368-2ead-463d-af6e-a49d9ebad151",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 54.61377870563674,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -1,0 +1,7145 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "chess_game": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chess game": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "chess_games": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "game": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ready": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "brave": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tough": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "chess pastime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "chess diversion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "chess amusement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "chess entertainment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "chess recreation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.game_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "game_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "game id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "game_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "game": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "game identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "game identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "game identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "game credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "ready": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "brave": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tough": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "chess_game.rated": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "rated"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rated": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.turn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "turns"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "go": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "try": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "crack": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "seizure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "spasm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "bout": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "fit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.victory_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "victory_status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "victory status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "victory_status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "victory category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "victory importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "victory prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "victory prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "victory condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "victory class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.winner": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "winner"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "winner": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "victor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "conqueror": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "frontrunner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "leader": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "champion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "champ": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "front-runner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "cert": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "sensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.game_type_lichess_standards": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "game_type (Lichess standards)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "game_type (lichess standards)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "game_type (lichess standard)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "game_type": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.time_increment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "time_increment"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time increment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time_increment": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "duration increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "interval increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "moment increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "timetable increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "time addition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time augmentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time growth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "time increase": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "time raise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.white_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "white_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "white id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "white_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "white": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "white identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "white identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "white identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "white credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "silver": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grey": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gray": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "greying": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "graying": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "freezing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.white_rating": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "white_rating"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "white rating": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "white_rating": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rating": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "white assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "white evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "white score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "white grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "white ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "white mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.black_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "black_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "black id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "black_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "black": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "black identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "black identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "black identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "black credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "obscure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.black_rating": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "black_rating"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "black rating": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "black_rating": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rating": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "black assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "black evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "black score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "black grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "black ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "black mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.move": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "moves"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "move": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "change": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "traffic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "interchange": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "passage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "travel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "transport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "exchange": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "effort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "movement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "opening_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "opening id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "opening key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_move": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "opening_moves"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening move": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_moves": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "opening change": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening traffic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening interchange": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening passage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening travel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening transport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening exchange": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening effort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "opening movement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_fullname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "opening_fullname"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening fullname": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_fullname": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_shortname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "opening_shortname"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening shortname": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_shortname": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_response": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "opening_response"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening response": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_response": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "opening rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "reaction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "opening reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening answer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening retort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "reply": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_variation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "opening_variation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening variation": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_variation": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "variation": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "opening disparity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening dissimilarity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening distinction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening discrepancy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening deviation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "disparity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dissimilarity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "distinction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "discrepancy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "deviation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.time_without_increment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "time_without_increment (min)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time without increment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time without increment (min)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "time_without_increment (min)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "duration without increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "interval without increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "moment without increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "period without increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "timetable without increment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "time_without_increment ( minimum )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "minute",
+			        "min"
+			      ]
+			    },
+			    "chess_game.increment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "increment (s)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "increment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "increment (s)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "addition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "augmentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "growth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "increase": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "raise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "boost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ],
+			      "Units": [
+			        "second",
+			        "s"
+			      ]
+			    },
+			    "chess_game.who_won": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "who won?"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "who won?": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.rating_difference": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "rating difference"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rating difference": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "difference": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "rating alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rating variance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rating modification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rating transformation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "rating metamorphosis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "variance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "modification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "transformation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "metamorphosis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.turns_bins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "turns (bins)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turns (bins)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "turn (bin)": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "turns": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.avg_rating": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "Avg Rating"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg rating": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average rating": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "avg assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "avg evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "avg score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "avg grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "avg ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "avg mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "avg sailor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "avg seaman": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "avg hand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.max_rating": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "Max Rating"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max rating": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rating": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "maximum rating": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "max assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "max evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "max score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "max mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.min_rating": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "Min Rating"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "min rating": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rating": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "minimum rating": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "min assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "min evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "evaluation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "min score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "min grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "min ranking": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "min mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "score": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.QG_games": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "QG Games"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "QG games": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "games": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "qg competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "qg tournament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tournament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "qg sport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "qg cup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "qg meet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "qg knockout": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.QG_wins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "QG Wins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "QG wins": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "qg success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "qg landslide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "qg conquest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "landslide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "conquest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "qg victory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "qg triumph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "victory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "triumph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.KG_wins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "KG Wins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KG wins": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kg success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "kg landslide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "kg conquest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "landslide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "conquest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "kg victory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "kg triumph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "victory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "triumph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.EG_wins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "EG Wins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EG wins": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "wins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "eg success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "eg landslide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "eg conquest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "success": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "landslide": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "conquest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "eg victory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "eg triumph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "victory": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "triumph": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.EG_games": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "EG Games"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "EG games": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "games": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "eg competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "eg tournament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tournament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "eg sport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "eg cup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "eg meet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "eg knockout": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.KG_games": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "KG Games"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "KG games": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "games": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "kg competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "kg tournament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tournament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "kg sport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "kg cup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "kg meet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "kg knockout": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sport": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cup": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.corr_Time_Turns": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "Corr Time_Turns"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "corr Time_Turns": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Corr(Time , Turns)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.corr_Increment_Turns": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "Corr Increment_Turns"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "corr Increment_Turns": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Corr(Increment , Turns)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.correlation_time_increment_mins": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "ConceptualProperty": "Correlation_Time_Increment_Mins"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "correlation time increment mins": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Correlation_Time_Increment_Mins": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "increment mins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "time increment mins": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "correlation duration increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "correlation interval increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "correlation moment increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "duration increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "interval increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "correlation period increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "correlation timetable increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "period increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "timetable increment min": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Corr(Time , Increment)": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_shortname_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "Hierarchy": "opening_shortname Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening_shortname hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_shortname ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening_shortname grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening_shortname order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "opening_shortname pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_shortname_hierarchy.opening_shortname": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "Hierarchy": "opening_shortname Hierarchy",
+			          "HierarchyLevel": "opening_shortname"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening shortname": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_shortname": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "chess_game.opening_shortname_hierarchy.opening_variation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "chess_games",
+			          "Hierarchy": "opening_shortname Hierarchy",
+			          "HierarchyLevel": "opening_variation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "opening variation": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opening_variation": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "variation": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "opening disparity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening dissimilarity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening distinction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening discrepancy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "opening deviation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "disparity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dissimilarity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "distinction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "discrepancy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "deviation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "player": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "player": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "actor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "performer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "entertainer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "trouper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "thespian": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "play-actor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "competitor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "contestant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "participant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "player.player_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "ConceptualProperty": "player_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "player id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "player_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "player identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "player identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "player identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "player credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "player.total_game": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "ConceptualProperty": "total_games"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total game": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_games": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "game": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate game": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall game": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "ready": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "brave": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tough": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "total pastime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "total diversion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "total amusement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "total entertainment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "total recreation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "player.game_played_as_white": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "ConceptualProperty": "games_played_as_white"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "game played as white": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "games_played_as_white": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pastime played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "diversion played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "amusement played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "entertainment played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "recreation played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "sport played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        }
+			      ]
+			    },
+			    "player.games_played__as_black": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "ConceptualProperty": "games_played _as_black"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "games_played _as_black": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "player.games_as_white": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "ConceptualProperty": "Games as White"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "games as white": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "white": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "as white": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "games": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "competition as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "tournament as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "sport as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cup as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "meet as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "knockout as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tournament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "playoff as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "silver": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "player.games_as_black": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "ConceptualProperty": "Games as Black"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "games as black": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "black": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "as black": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "games": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "competition as black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "tournament as black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "sport as black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "cup as black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "meet as black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "knockout as black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "competition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tournament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "playoff as black": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "dark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "player.total_games_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "Hierarchy": "total_games Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total_games hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_game hierarchy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "total_game ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total_game grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total_game order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total_game pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "player.total_games_hierarchy.total_game": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "Hierarchy": "total_games Hierarchy",
+			          "HierarchyLevel": "total_games"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total game": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total_games": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "game": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate game": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall game": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "ready": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "brave": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "tough": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "total pastime": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "total diversion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "total amusement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "total entertainment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "total recreation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "player.total_games_hierarchy.game_played_as_white": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "Hierarchy": "total_games Hierarchy",
+			          "HierarchyLevel": "games_played_as_white"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "game played as white": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "games_played_as_white": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pastime played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "diversion played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "amusement played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "entertainment played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "recreation played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "sport played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        }
+			      ]
+			    },
+			    "player.total_games_hierarchy.games_played__as_black": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "player",
+			          "Hierarchy": "total_games Hierarchy",
+			          "HierarchyLevel": "games_played _as_black"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "games_played _as_black": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "p_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "P1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "P1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "p_1.white_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "P1",
+			          "ConceptualProperty": "white_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "white id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "white_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "white": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "white identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "white identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "white identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "white credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "silver": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grey": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "gray": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "greying": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "graying": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "freezing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "p_1.game_played_as_white": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "P1",
+			          "ConceptualProperty": "game_played_as_white"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "game played as white": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "game_played_as_white": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "pastime played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "diversion played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "amusement played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "entertainment played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "recreation played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.464
+			          }
+			        },
+			        {
+			          "sport played as white": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        }
+			      ]
+			    },
+			    "p_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "P2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "p 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "P2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "p_2.black_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "P2",
+			          "ConceptualProperty": "black_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "black id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "black_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "black": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "black identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "black identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "black identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "black credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "obscure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dim": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "p_2.games_played__as_black": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "P2",
+			          "ConceptualProperty": "games_played _as_black"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "games_played _as_black": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "player_total_games_hierarchy_has_game_played_as_white": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player.total_games_hierarchy": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy"
+			          }
+			        },
+			        "player.total_games_hierarchy.game_played_as_white": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy.game_played_as_white"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.game_played_as_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "total_games_hierarchies_have_game_played_as_white"
+			        }
+			      ]
+			    },
+			    "player_total_games_hierarchy_has_total_game": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player.total_games_hierarchy": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy"
+			          }
+			        },
+			        "player.total_games_hierarchy.total_game": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy.total_game"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.total_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "total_games_hierarchies_have_total_games"
+			        }
+			      ]
+			    },
+			    "chess_game_opening_shortname_hierarchy_opening_shortname_has_chess_game_opening_shortname_hierarchy_opening_variation": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game.opening_shortname_hierarchy.opening_shortname": {
+			          "Target": {
+			            "Entity": "chess_game.opening_shortname_hierarchy.opening_shortname"
+			          }
+			        },
+			        "chess_game.opening_shortname_hierarchy.opening_variation": {
+			          "Target": {
+			            "Entity": "chess_game.opening_shortname_hierarchy.opening_variation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game.opening_shortname_hierarchy.opening_shortname"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_shortname_hierarchy.opening_variation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opening_shortnames_have_opening_variations"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game.opening_shortname_hierarchy.opening_variation"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_shortname_hierarchy.opening_shortname"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opening_variations_have_opening_shortnames"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "chess_game.opening_shortname_hierarchy.opening_variation"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "chess_game.opening_shortname_hierarchy.opening_shortname"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opening_variations_are_in_opening_shortnames"
+			        }
+			      ]
+			    },
+			    "chess_game_opening_shortname_hierarchy_has_opening_variation": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game.opening_shortname_hierarchy": {
+			          "Target": {
+			            "Entity": "chess_game.opening_shortname_hierarchy"
+			          }
+			        },
+			        "chess_game.opening_shortname_hierarchy.opening_variation": {
+			          "Target": {
+			            "Entity": "chess_game.opening_shortname_hierarchy.opening_variation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game.opening_shortname_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_shortname_hierarchy.opening_variation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opening_shortname_hierarchies_have_opening_variations"
+			        }
+			      ]
+			    },
+			    "chess_game_opening_shortname_hierarchy_has_opening_shortname": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game.opening_shortname_hierarchy": {
+			          "Target": {
+			            "Entity": "chess_game.opening_shortname_hierarchy"
+			          }
+			        },
+			        "chess_game.opening_shortname_hierarchy.opening_shortname": {
+			          "Target": {
+			            "Entity": "chess_game.opening_shortname_hierarchy.opening_shortname"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game.opening_shortname_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_shortname_hierarchy.opening_shortname"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "opening_shortname_hierarchies_have_opening_shortnames"
+			        }
+			      ]
+			    },
+			    "chess_game_has_player": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "player": {
+			          "Target": {
+			            "Entity": "player"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "player"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_players"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player"
+			            },
+			            "Object": {
+			              "Role": "chess_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "players_have_chess_games"
+			        }
+			      ]
+			    },
+			    "chess_game_has_p_2": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "p_2": {
+			          "Target": {
+			            "Entity": "p_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "p_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_p_2"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "p_2"
+			            },
+			            "Object": {
+			              "Role": "chess_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p_2_have_chess_games"
+			        }
+			      ]
+			    },
+			    "chess_game_has_p_1": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "p_1": {
+			          "Target": {
+			            "Entity": "p_1"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "p_1"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_p_1"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "p_1"
+			            },
+			            "Object": {
+			              "Role": "chess_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p_1_have_chess_games"
+			        }
+			      ]
+			    },
+			    "p_2_has_games_played__as_black": {
+			      "Binding": {
+			        "ConceptualEntity": "P2"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "p_2": {
+			          "Target": {
+			            "Entity": "p_2"
+			          }
+			        },
+			        "p_2.games_played__as_black": {
+			          "Target": {
+			            "Entity": "p_2.games_played__as_black"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "p_2"
+			            },
+			            "Object": {
+			              "Role": "p_2.games_played__as_black"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p_2_have_games_played__as_blacks"
+			        }
+			      ]
+			    },
+			    "p_2_has_black_id": {
+			      "Binding": {
+			        "ConceptualEntity": "P2"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "p_2": {
+			          "Target": {
+			            "Entity": "p_2"
+			          }
+			        },
+			        "p_2.black_id": {
+			          "Target": {
+			            "Entity": "p_2.black_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "p_2"
+			            },
+			            "Object": {
+			              "Role": "p_2.black_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p_2_have_black_ids"
+			        }
+			      ]
+			    },
+			    "p_1_has_game_played_as_white": {
+			      "Binding": {
+			        "ConceptualEntity": "P1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "p_1": {
+			          "Target": {
+			            "Entity": "p_1"
+			          }
+			        },
+			        "p_1.game_played_as_white": {
+			          "Target": {
+			            "Entity": "p_1.game_played_as_white"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "p_1"
+			            },
+			            "Object": {
+			              "Role": "p_1.game_played_as_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p_1_have_game_played_as_white"
+			        }
+			      ]
+			    },
+			    "p_1_has_white_id": {
+			      "Binding": {
+			        "ConceptualEntity": "P1"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "p_1": {
+			          "Target": {
+			            "Entity": "p_1"
+			          }
+			        },
+			        "p_1.white_id": {
+			          "Target": {
+			            "Entity": "p_1.white_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "p_1"
+			            },
+			            "Object": {
+			              "Role": "p_1.white_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "p_1_have_white_ids"
+			        }
+			      ]
+			    },
+			    "player_has_total_games_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player": {
+			          "Target": {
+			            "Entity": "player"
+			          }
+			        },
+			        "player.total_games_hierarchy": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player"
+			            },
+			            "Object": {
+			              "Role": "player.total_games_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "players_have_total_games_hierarchies"
+			        }
+			      ]
+			    },
+			    "chess_game_has_player_games_as_black": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "player.games_as_black": {
+			          "Target": {
+			            "Entity": "player.games_as_black"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "player.games_as_black"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_games_as_black"
+			        }
+			      ]
+			    },
+			    "chess_game_has_player_games_as_white": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "player.games_as_white": {
+			          "Target": {
+			            "Entity": "player.games_as_white"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "player.games_as_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_games_as_white"
+			        }
+			      ]
+			    },
+			    "player_has_games_played__as_black": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player": {
+			          "Target": {
+			            "Entity": "player"
+			          }
+			        },
+			        "player.games_played__as_black": {
+			          "Target": {
+			            "Entity": "player.games_played__as_black"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player"
+			            },
+			            "Object": {
+			              "Role": "player.games_played__as_black"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "players_have_games_played__as_blacks"
+			        }
+			      ]
+			    },
+			    "player_has_game_played_as_white": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player": {
+			          "Target": {
+			            "Entity": "player"
+			          }
+			        },
+			        "player.game_played_as_white": {
+			          "Target": {
+			            "Entity": "player.game_played_as_white"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player"
+			            },
+			            "Object": {
+			              "Role": "player.game_played_as_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "players_have_game_played_as_white"
+			        }
+			      ]
+			    },
+			    "player_has_total_game": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player": {
+			          "Target": {
+			            "Entity": "player"
+			          }
+			        },
+			        "player.total_game": {
+			          "Target": {
+			            "Entity": "player.total_game"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player"
+			            },
+			            "Object": {
+			              "Role": "player.total_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "players_have_total_games"
+			        }
+			      ]
+			    },
+			    "player_has_player_id": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player": {
+			          "Target": {
+			            "Entity": "player"
+			          }
+			        },
+			        "player.player_id": {
+			          "Target": {
+			            "Entity": "player.player_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player"
+			            },
+			            "Object": {
+			              "Role": "player.player_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "players_have_player_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "player"
+			            },
+			            "Name": {
+			              "Role": "player.player_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "player_ids_are_names_IDs_of_players"
+			        }
+			      ]
+			    },
+			    "chess_game_has_opening_shortname_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.opening_shortname_hierarchy": {
+			          "Target": {
+			            "Entity": "chess_game.opening_shortname_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_shortname_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_opening_shortname_hierarchies"
+			        }
+			      ]
+			    },
+			    "chess_game_has_correlation_time_increment_mins": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.correlation_time_increment_mins": {
+			          "Target": {
+			            "Entity": "chess_game.correlation_time_increment_mins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.correlation_time_increment_mins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_correlation_time_increment_mins"
+			        }
+			      ]
+			    },
+			    "chess_game_has_corr_Increment_Turns": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.corr_Increment_Turns": {
+			          "Target": {
+			            "Entity": "chess_game.corr_Increment_Turns"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.corr_Increment_Turns"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_corr_Increment_Turns"
+			        }
+			      ]
+			    },
+			    "chess_game_has_corr_Time_Turns": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.corr_Time_Turns": {
+			          "Target": {
+			            "Entity": "chess_game.corr_Time_Turns"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.corr_Time_Turns"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_corr_Time_Turns"
+			        }
+			      ]
+			    },
+			    "chess_game_has_DG_games": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.DG_games": {
+			          "Target": {
+			            "Entity": "chess_game.DG_games"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.DG_games"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_DG_games"
+			        }
+			      ]
+			    },
+			    "chess_game_has_KG_games": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.KG_games": {
+			          "Target": {
+			            "Entity": "chess_game.KG_games"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.KG_games"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_KG_games"
+			        }
+			      ]
+			    },
+			    "chess_game_has_EG_games": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.EG_games": {
+			          "Target": {
+			            "Entity": "chess_game.EG_games"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.EG_games"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_EG_games"
+			        }
+			      ]
+			    },
+			    "chess_game_has_EG_wins": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.EG_wins": {
+			          "Target": {
+			            "Entity": "chess_game.EG_wins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.EG_wins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_EG_wins"
+			        }
+			      ]
+			    },
+			    "chess_game_has_DG_wins": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.DG_wins": {
+			          "Target": {
+			            "Entity": "chess_game.DG_wins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.DG_wins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_DG_wins"
+			        }
+			      ]
+			    },
+			    "chess_game_has_KG_wins": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.KG_wins": {
+			          "Target": {
+			            "Entity": "chess_game.KG_wins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.KG_wins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_KG_wins"
+			        }
+			      ]
+			    },
+			    "chess_game_has_QG_wins": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.QG_wins": {
+			          "Target": {
+			            "Entity": "chess_game.QG_wins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.QG_wins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_QG_wins"
+			        }
+			      ]
+			    },
+			    "chess_game_has_QG_games": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.QG_games": {
+			          "Target": {
+			            "Entity": "chess_game.QG_games"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.QG_games"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_QG_games"
+			        }
+			      ]
+			    },
+			    "chess_game_has_min_rating": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.min_rating": {
+			          "Target": {
+			            "Entity": "chess_game.min_rating"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.min_rating"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_min_rating"
+			        }
+			      ]
+			    },
+			    "chess_game_has_max_rating": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.max_rating": {
+			          "Target": {
+			            "Entity": "chess_game.max_rating"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.max_rating"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_max_rating"
+			        }
+			      ]
+			    },
+			    "chess_game_has_avg_rating": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.avg_rating": {
+			          "Target": {
+			            "Entity": "chess_game.avg_rating"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.avg_rating"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_avg_rating"
+			        }
+			      ]
+			    },
+			    "chess_game_has_turns_bins": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.turns_bins": {
+			          "Target": {
+			            "Entity": "chess_game.turns_bins"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.turns_bins"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_turns_bins"
+			        }
+			      ]
+			    },
+			    "chess_game_has_rating_difference": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.rating_difference": {
+			          "Target": {
+			            "Entity": "chess_game.rating_difference"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.rating_difference"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_rating_differences"
+			        }
+			      ]
+			    },
+			    "chess_game_has_who_won": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.who_won": {
+			          "Target": {
+			            "Entity": "chess_game.who_won"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.who_won"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_who_won"
+			        }
+			      ]
+			    },
+			    "chess_game_has_increment": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.increment": {
+			          "Target": {
+			            "Entity": "chess_game.increment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.increment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_increments"
+			        }
+			      ]
+			    },
+			    "chess_game_has_time_without_increment": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.time_without_increment": {
+			          "Target": {
+			            "Entity": "chess_game.time_without_increment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.time_without_increment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_time_without_increment"
+			        }
+			      ]
+			    },
+			    "chess_game_has_opening_variation": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.opening_variation": {
+			          "Target": {
+			            "Entity": "chess_game.opening_variation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_variation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_opening_variations"
+			        }
+			      ]
+			    },
+			    "chess_game_has_opening_response": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.opening_response": {
+			          "Target": {
+			            "Entity": "chess_game.opening_response"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_response"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_opening_responses"
+			        }
+			      ]
+			    },
+			    "chess_game_has_opening_shortname": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.opening_shortname": {
+			          "Target": {
+			            "Entity": "chess_game.opening_shortname"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_shortname"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_opening_shortnames"
+			        }
+			      ]
+			    },
+			    "chess_game_has_opening_fullname": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.opening_fullname": {
+			          "Target": {
+			            "Entity": "chess_game.opening_fullname"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_fullname"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_opening_fullnames"
+			        }
+			      ]
+			    },
+			    "chess_game_has_opening_move": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.opening_move": {
+			          "Target": {
+			            "Entity": "chess_game.opening_move"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_move"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_opening_moves"
+			        }
+			      ]
+			    },
+			    "chess_game_has_opening_code": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.opening_code": {
+			          "Target": {
+			            "Entity": "chess_game.opening_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.opening_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_opening_codes"
+			        }
+			      ]
+			    },
+			    "chess_game_has_move": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.move": {
+			          "Target": {
+			            "Entity": "chess_game.move"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.move"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_moves"
+			        }
+			      ]
+			    },
+			    "chess_game_has_black_rating": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.black_rating": {
+			          "Target": {
+			            "Entity": "chess_game.black_rating"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.black_rating"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_black_rating"
+			        }
+			      ]
+			    },
+			    "chess_game_has_white_rating": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.white_rating": {
+			          "Target": {
+			            "Entity": "chess_game.white_rating"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.white_rating"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_white_rating"
+			        }
+			      ]
+			    },
+			    "chess_game_has_time_increment": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.time_increment": {
+			          "Target": {
+			            "Entity": "chess_game.time_increment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.time_increment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_time_increments"
+			        }
+			      ]
+			    },
+			    "chess_game_has_game_type_lichess_standards": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.game_type_lichess_standards": {
+			          "Target": {
+			            "Entity": "chess_game.game_type_lichess_standards"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.game_type_lichess_standards"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_game_type_lichess_standards"
+			        }
+			      ]
+			    },
+			    "chess_game_has_winner": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.winner": {
+			          "Target": {
+			            "Entity": "chess_game.winner"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.winner"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_winners"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "chess_game.winner"
+			            },
+			            "Verbs": [
+			              {
+			                "win": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "chess_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "winners_win_chess_games"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game.winner"
+			            },
+			            "Object": {
+			              "Role": "chess_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "winners_have_chess_games"
+			        }
+			      ]
+			    },
+			    "chess_game_has_victory_status": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.victory_status": {
+			          "Target": {
+			            "Entity": "chess_game.victory_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.victory_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_victory_statuses"
+			        }
+			      ]
+			    },
+			    "chess_game_has_turn": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.turn": {
+			          "Target": {
+			            "Entity": "chess_game.turn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.turn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_turns"
+			        }
+			      ]
+			    },
+			    "chess_game_has_rated": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.rated": {
+			          "Target": {
+			            "Entity": "chess_game.rated"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.rated"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_rated"
+			        }
+			      ]
+			    },
+			    "chess_game_has_game_id": {
+			      "Binding": {
+			        "ConceptualEntity": "chess_games"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "chess_game": {
+			          "Target": {
+			            "Entity": "chess_game"
+			          }
+			        },
+			        "chess_game.game_id": {
+			          "Target": {
+			            "Entity": "chess_game.game_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Object": {
+			              "Role": "chess_game.game_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "chess_games_have_game_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "chess_game"
+			            },
+			            "Name": {
+			              "Role": "chess_game.game_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "game_ids_are_names_IDs_of_chess_games"
+			        }
+			      ]
+			    },
+			    "player_total_games_hierarchy_has_games_played__as_black": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player.total_games_hierarchy": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy"
+			          }
+			        },
+			        "player.total_games_hierarchy.games_played__as_black": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy.games_played__as_black"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.games_played__as_black"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "total_games_hierarchies_have_games_played__as_blacks"
+			        }
+			      ]
+			    },
+			    "player_total_games_hierarchy_total_game_has_player_total_games_hierarchy_game_played_as_white": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player.total_games_hierarchy.total_game": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy.total_game"
+			          }
+			        },
+			        "player.total_games_hierarchy.game_played_as_white": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy.game_played_as_white"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy.total_game"
+			            },
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.game_played_as_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "total_games_have_game_played_as_white"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy.game_played_as_white"
+			            },
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.total_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "game_played_as_white_have_total_games"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy.game_played_as_white"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.total_game"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "game_played_as_white_are_in_total_games"
+			        }
+			      ]
+			    },
+			    "player_total_games_hierarchy_game_played_as_white_has_player_total_games_hierarchy_games_played__as_black": {
+			      "Binding": {
+			        "ConceptualEntity": "player"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "player.total_games_hierarchy.game_played_as_white": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy.game_played_as_white"
+			          }
+			        },
+			        "player.total_games_hierarchy.games_played__as_black": {
+			          "Target": {
+			            "Entity": "player.total_games_hierarchy.games_played__as_black"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy.game_played_as_white"
+			            },
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.games_played__as_black"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "game_played_as_white_have_games_played__as_blacks"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy.games_played__as_black"
+			            },
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.game_played_as_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "games_played__as_blacks_have_game_played_as_white"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "player.total_games_hierarchy.games_played__as_black"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "player.total_games_hierarchy.game_played_as_white"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "games_played__as_blacks_are_in_game_played_as_white"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

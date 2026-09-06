@@ -1,0 +1,21 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["chess_games","player","P1","P2"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table chess_games
+ref table player
+ref table P1
+ref table P2
+
+ref cultureInfo en-US
+

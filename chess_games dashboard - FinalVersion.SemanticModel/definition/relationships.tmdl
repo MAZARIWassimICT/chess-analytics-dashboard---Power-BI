@@ -1,0 +1,17 @@
+relationship AutoDetected_c2c1512b-ff21-438d-a0b8-9c0b1def9804
+	fromColumn: chess_games.white_id
+	toColumn: P1.white_id
+
+relationship AutoDetected_7e34e366-ca9c-419f-9c0d-ff85dc016729
+	fromColumn: chess_games.black_id
+	toColumn: P2.black_id
+
+relationship 36572fc6-82f2-9835-a1c6-c120511cc99e
+	fromColumn: chess_games.black_id
+	toColumn: player.player_id
+
+relationship 0de10ad6-eba8-ab8e-1ed0-60ef267a403d
+	isActive: false
+	fromColumn: chess_games.white_id
+	toColumn: player.player_id
+

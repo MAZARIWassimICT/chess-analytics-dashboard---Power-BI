@@ -1,0 +1,73 @@
+table P1
+	lineageTag: 1dbe09d6-a00c-40f2-b040-0a9ab151dc02
+
+	column white_id
+		dataType: string
+		lineageTag: f5cf2645-0d79-4361-92cc-9a10f8694211
+		summarizeBy: none
+		sourceColumn: white_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column game_played_as_white
+		dataType: int64
+		formatString: 0
+		lineageTag: 59e3c1e4-66ee-457c-ac92-b3107000aa17
+		summarizeBy: none
+		sourceColumn: game_played_as_white
+
+		annotation SummarizationSetBy = Automatic
+
+	partition P1 = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Admin\Desktop\Self DEV\BI\Projects\chess_games.csv"),[Delimiter=",", Columns=17, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"game_id", Int64.Type}, {"rated", type logical}, {"turns", Int64.Type}, {"victory_status", type text}, {"winner", type text}, {"time_increment", type text}, {"white_id", type text}, {"white_rating", Int64.Type}, {"black_id", type text}, {"black_rating", Int64.Type}, {"moves", type text}, {"opening_code", type text}, {"opening_moves", Int64.Type}, {"opening_fullname", type text}, {"opening_shortname", type text}, {"opening_response", type text}, {"opening_variation", type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"opening_response", Text.Proper, type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Capitalized Each Word","Refused","Declined",Replacer.ReplaceText,{"opening_response"}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Replaced Value", "time_increment", "time_increment - Copy"),
+				    #"Extracted Text Before Delimiter" = Table.TransformColumns(#"Duplicated Column", {{"time_increment - Copy", each Text.BeforeDelimiter(_, "+"), type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Extracted Text Before Delimiter",{{"time_increment - Copy", "time_without_increment"}}),
+				    #"Duplicated Column1" = Table.DuplicateColumn(#"Renamed Columns", "time_increment", "time_increment - Copy"),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Duplicated Column1",{{"time_increment - Copy", "increment"}}),
+				    #"Extracted Text After Delimiter" = Table.TransformColumns(#"Renamed Columns1", {{"increment", each Text.AfterDelimiter(_, "+"), type text}}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Extracted Text After Delimiter",{{"increment", Int64.Type}, {"time_without_increment", Int64.Type}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type1", "game type (Lichess standards)", each if ([time_without_increment] * 60 + 40 * [increment]) <= 29 then "UltraBullet"
+				else if ([time_without_increment] * 60 + 40 * [increment]) <= 179 then "Bullet"
+				else if ([time_without_increment] * 60 + 40 * [increment]) <= 479 then "Blitz"
+				else if ([time_without_increment] * 60 + 40 * [increment]) <= 1499 then "Rapid"
+				else "Classical"),
+				    #"Renamed Columns2" = Table.RenameColumns(#"Added Custom",{{"increment", "increment (s)"}, {"time_without_increment", "time_without_increment (min)"}, {"game type (Lichess standards)", "game_type (Lichess standards)"}}),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Renamed Columns2",{"game_id", "rated", "turns", "victory_status", "winner", "game_type (Lichess standards)", "time_increment", "white_id", "white_rating", "black_id", "black_rating", "moves", "opening_code", "opening_moves", "opening_fullname", "opening_shortname", "opening_response", "opening_variation", "time_without_increment (min)", "increment (s)"}),
+				    #"Sorted Rows" = Table.Sort(#"Reordered Columns",{{"time_increment", Order.Ascending}}),
+				    #"Added Custom1" = Table.AddColumn(#"Sorted Rows", "who won?", each if [white_rating] = [black_rating] then
+				    if [winner] = "Draw" then "Draw"
+				    else "Equal Rating"
+				else if [winner] = "Draw" then "Draw"
+				else if ([winner] = "White" and [white_rating] > [black_rating])
+				    or ([winner] = "Black" and [black_rating] > [white_rating])
+				then "Higher Rated"
+				else "Lower Rated"),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom1",{{"who won?", type text}}),
+				    #"Added Custom2" = Table.AddColumn(#"Changed Type2", "rating difference", each [white_rating] - [black_rating]),
+				    #"Inserted Absolute Value" = Table.AddColumn(#"Added Custom2", "Absolute Value", each Number.Abs([rating difference]), type number),
+				    #"Removed Columns" = Table.RemoveColumns(#"Inserted Absolute Value",{"rating difference"}),
+				    #"Renamed Columns3" = Table.RenameColumns(#"Removed Columns",{{"Absolute Value", "rating difference"}}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Renamed Columns3","","Unspecified Variation",Replacer.ReplaceValue,{"opening_variation"}),
+				    #"Sorted Rows1" = Table.Sort(#"Replaced Value1",{{"game_id", Order.Ascending}}),
+				    #"Changed Type3" = Table.TransformColumnTypes(#"Sorted Rows1",{{"game_type (Lichess standards)", type text}}),
+				    #"Removed Other Columns" = Table.SelectColumns(#"Changed Type3",{"black_id", "white_id"}),
+				    #"Sorted Rows2" = Table.Sort(#"Removed Other Columns",{{"black_id", Order.Ascending}}),
+				    #"Removed Columns1" = Table.RemoveColumns(#"Sorted Rows2",{"black_id"}),
+				    #"Sorted Rows3" = Table.Sort(#"Removed Columns1",{{"white_id", Order.Ascending}}),
+				    #"Grouped Rows" = Table.Group(#"Sorted Rows3", {"white_id"}, {{"game_played_as_white", each Table.RowCount(_), Int64.Type}}),
+				    #"Sorted Rows4" = Table.Sort(#"Grouped Rows",{{"game_played_as_white", Order.Descending}})
+				in
+				    #"Sorted Rows4"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

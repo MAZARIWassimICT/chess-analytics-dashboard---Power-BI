@@ -1,0 +1,465 @@
+table chess_games
+	lineageTag: 5b2d038d-b448-4d20-addd-7801a2ed9659
+
+	measure 'Avg Rating' = (AVERAGE(chess_games[black_rating])+AVERAGE(chess_games[white_rating]))/2
+		lineageTag: 89f43173-8a39-421d-97b3-e615325437c6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Max Rating' = max(max(chess_games[black_rating]),max(chess_games[white_rating]))
+		formatString: 0.000
+		lineageTag: bbf34090-7338-4222-b89d-9fc2e0d4b313
+
+	measure 'Min Rating' = MIN(MIN(chess_games[black_rating]),MIN(chess_games[white_rating]))
+		formatString: 0
+		lineageTag: 7995e568-bba3-4d2b-90f9-38fbdd6086cb
+
+	measure 'QG Games' =
+			
+			CALCULATE(
+			    COUNTROWS(chess_games),
+			    chess_games[opening_shortname] = "Queen's Gambit"
+			)
+		formatString: 0
+		lineageTag: f7d0bd02-181e-4abb-8759-5a7248b1b32a
+
+	measure 'QG Wins' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(chess_games[game_id]),
+			    chess_games[opening_shortname] = "Queen's Gambit",
+			    chess_games[winner] = "white"
+			)
+		formatString: 0
+		lineageTag: b07a74d2-478a-4398-bc0b-0840989ad648
+
+	measure 'KG Wins' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(chess_games[game_id]),
+			    chess_games[opening_shortname] = "king's Gambit",
+			    chess_games[winner] = "white"
+			)
+		formatString: 0
+		lineageTag: 57870791-0277-47b0-8a68-b795d5d148f6
+
+	measure 'EG Wins' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT(chess_games[game_id]),
+			    chess_games[opening_shortname] = "Elephant Gambit",
+			    chess_games[winner] = "white"
+			)
+		formatString: 0
+		lineageTag: 08494fa7-8660-4581-92da-8ce1400176e5
+
+	measure 'EG Games' =
+			
+			CALCULATE(
+			    COUNTROWS(chess_games),
+			    chess_games[opening_shortname] = "Elephant Gambit"
+			)
+		formatString: 0
+		lineageTag: 849f5c87-034d-4060-95e2-b5c57cd7e335
+
+	measure 'KG Games' =
+			
+			CALCULATE(
+			    COUNTROWS(chess_games),
+			    chess_games[opening_shortname] = "King's Gambit"
+			)
+		formatString: 0
+		lineageTag: a624bdd9-c124-4aae-9541-17cf23955ef7
+
+	measure 'Corr Time_Turns' = ```
+			
+			// 1. Calculate overall averages for the dataset
+			VAR __muTime = CALCULATE(AVERAGE('chess_games'[time_without_increment (min)]))
+			VAR __muTurns = CALCULATE(AVERAGE('chess_games'[turns]))
+			
+			// 2. Calculate the numerator (sum of multiplied variances)
+			VAR __numerator = 
+			    SUMX(
+			        'chess_games', 
+			        ('chess_games'[time_without_increment (min)] - __muTime) * ('chess_games'[turns] - __muTurns)
+			    )
+			
+			// 3. Calculate the denominator (square root of squared variances)
+			VAR __denominator = 
+			    SQRT(
+			        SUMX('chess_games', ('chess_games'[time_without_increment (min)] - __muTime)^2) * 
+			        SUMX('chess_games', ('chess_games'[turns] - __muTurns)^2)
+			    )
+			
+			// 4. Return the divided result
+			RETURN 
+			    DIVIDE(__numerator, __denominator)
+			```
+		lineageTag: 4145e73c-d205-47cd-9e76-aa2e664f6096
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Corr Increment_Turns' = ```
+			
+			// 1. Calculate overall averages
+			VAR __muInc = CALCULATE(AVERAGE('chess_games'[increment (s)]))
+			VAR __muTurns = CALCULATE(AVERAGE('chess_games'[turns]))
+			
+			// 2. Calculate the numerator
+			VAR __numerator = 
+			    SUMX(
+			        'chess_games', 
+			        ('chess_games'[increment (s)] - __muInc) * ('chess_games'[turns] - __muTurns)
+			    )
+			
+			// 3. Calculate the denominator
+			VAR __denominator = 
+			    SQRT(
+			        SUMX('chess_games', ('chess_games'[increment (s)] - __muInc)^2) * 
+			        SUMX('chess_games', ('chess_games'[turns] - __muTurns)^2)
+			    )
+			
+			// 4. Return the result
+			RETURN 
+			    DIVIDE(__numerator, __denominator)
+			```
+		lineageTag: dc14b5ab-b42f-4421-bda4-f9b0686bb82e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Correlation_Time_Increment_Mins = ```
+			
+			// 1. Calculate overall averages (converting average increment to minutes)
+			VAR __muTime = CALCULATE(AVERAGE('chess_games'[time_without_increment (min)]))
+			VAR __muInc_Min = CALCULATE(AVERAGE('chess_games'[increment (s)])) / 60
+			
+			// 2. Calculate the numerator
+			VAR __numerator = 
+			    SUMX(
+			        'chess_games', 
+			        ('chess_games'[time_without_increment (min)] - __muTime) * (('chess_games'[increment (s)] / 60) - __muInc_Min)
+			    )
+			
+			// 3. Calculate the denominator
+			VAR __denominator = 
+			    SQRT(
+			        SUMX('chess_games', ('chess_games'[time_without_increment (min)] - __muTime)^2) * 
+			        SUMX('chess_games', (('chess_games'[increment (s)] / 60) - __muInc_Min)^2)
+			    )
+			
+			// 4. Return the result
+			RETURN 
+			    DIVIDE(__numerator, __denominator)
+			```
+		lineageTag: 4d5ade56-1c86-491d-bcf3-740162cba328
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'QG Rate' = 100* [QG Wins] /[QG Games]
+		lineageTag: 29b482dc-de3e-4a39-821a-d1efc141a156
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'KG Rate' = 100* [KG Wins] /[KG Games]
+		lineageTag: c6022ef9-f5c3-482d-8e01-aab97ae93b6e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'EG Rate' = 100* [EG Wins] /[EG Games]
+		lineageTag: 5478d603-a1ca-47dd-a184-442161f4c003
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column game_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 5c77d0d4-8b72-41fb-bd68-da8cbed51345
+		summarizeBy: sum
+		sourceColumn: game_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column rated
+		dataType: string
+		lineageTag: d371d279-d063-49f8-9d55-0cdb896773eb
+		summarizeBy: none
+		sourceColumn: rated
+
+		annotation SummarizationSetBy = Automatic
+
+	column turns
+		dataType: int64
+		formatString: 0
+		lineageTag: e2cb337e-9aa1-4081-858d-60755a07e563
+		summarizeBy: sum
+		sourceColumn: turns
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"chess_games","TableItemName":"turns (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column victory_status
+		dataType: string
+		lineageTag: 7c1a18b7-d74a-43b8-8414-0a884e0e843e
+		summarizeBy: none
+		sourceColumn: victory_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column winner
+		dataType: string
+		lineageTag: c8b85739-d7ae-4d8d-93d6-46a46bb95a26
+		summarizeBy: none
+		sourceColumn: winner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'game_type (Lichess standards)'
+		dataType: string
+		lineageTag: fd1dca0b-3edf-416b-893a-b79be3756ba0
+		summarizeBy: none
+		sourceColumn: game_type (Lichess standards)
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_increment
+		dataType: string
+		lineageTag: 7f25903f-b218-4914-a0fe-0308e0513119
+		summarizeBy: none
+		sourceColumn: time_increment
+
+		annotation SummarizationSetBy = Automatic
+
+	column white_id
+		dataType: string
+		lineageTag: f3569a88-7da8-4e27-9aef-e813185fb28f
+		summarizeBy: none
+		sourceColumn: white_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column white_rating
+		dataType: int64
+		formatString: 0
+		lineageTag: 03ae182b-4542-46dd-95da-07786ad5cb9d
+		summarizeBy: sum
+		sourceColumn: white_rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column black_id
+		dataType: string
+		lineageTag: 1decd0a0-44e6-49ba-878c-67a3912bc062
+		summarizeBy: none
+		sourceColumn: black_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column black_rating
+		dataType: int64
+		formatString: 0
+		lineageTag: c8a79d77-c03f-42ba-8775-2cd96b63dad3
+		summarizeBy: sum
+		sourceColumn: black_rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column moves
+		dataType: string
+		lineageTag: e507e388-a903-4af0-a509-8760fd550c35
+		summarizeBy: none
+		sourceColumn: moves
+
+		annotation SummarizationSetBy = Automatic
+
+	column opening_code
+		dataType: string
+		lineageTag: 7c2a03d3-ed3e-4c50-94e7-1cd5321c1eab
+		summarizeBy: none
+		sourceColumn: opening_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column opening_moves
+		dataType: int64
+		formatString: 0
+		lineageTag: b4d23f63-be53-4e07-8250-26bf55e2457e
+		summarizeBy: sum
+		sourceColumn: opening_moves
+
+		annotation SummarizationSetBy = Automatic
+
+	column opening_fullname
+		dataType: string
+		lineageTag: f2b9f1df-ed97-44f3-b68d-54347d75a341
+		summarizeBy: none
+		sourceColumn: opening_fullname
+
+		annotation SummarizationSetBy = Automatic
+
+	column opening_shortname
+		dataType: string
+		lineageTag: bec0ee2a-2770-4da5-a6e1-77587c4dea1f
+		summarizeBy: none
+		sourceColumn: opening_shortname
+
+		annotation SummarizationSetBy = Automatic
+
+	column opening_response
+		dataType: string
+		lineageTag: e31a8fed-d7a6-4625-80eb-b610de490e70
+		summarizeBy: none
+		sourceColumn: opening_response
+
+		annotation SummarizationSetBy = Automatic
+
+	column opening_variation
+		dataType: string
+		lineageTag: f7ba4bb0-56b1-4edd-a977-eca98f7d77c1
+		summarizeBy: none
+		sourceColumn: opening_variation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'time_without_increment (min)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 26237d91-44ab-49a7-baf4-381d1402aac4
+		summarizeBy: sum
+		sourceColumn: time_without_increment (min)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'increment (s)'
+		dataType: int64
+		formatString: 0
+		lineageTag: bfabf796-3739-443f-940e-39524ba1b345
+		summarizeBy: sum
+		sourceColumn: increment (s)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'who won?'
+		dataType: string
+		lineageTag: 72d8e5b2-be71-4a29-99b7-02af19096f62
+		summarizeBy: none
+		sourceColumn: who won?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'rating difference'
+		dataType: double
+		lineageTag: 647d377a-7267-4b64-b03f-6d79acd6c81b
+		summarizeBy: sum
+		sourceColumn: rating difference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'turns (bins)' =
+			IF(
+				ISBLANK('chess_games'[turns]),
+				BLANK(),
+				INT('chess_games'[turns] / 8) * 8
+			)
+		formatString: 0
+		lineageTag: 2b40314e-294c-4cc1-88ca-3a4a835642c8
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "chess_games"
+				          }
+				        },
+				        "Property": "turns"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 8.0,
+				      "unit": 0
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"c","Entity":"chess_games"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"turns"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"c"}},"Property":"turns"}},"Size":8.0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'opening_shortname Hierarchy'
+		lineageTag: 3fa8b0f2-2fa6-4672-82fd-98ab0376dd06
+
+		level opening_shortname
+			lineageTag: ae3c8189-15f8-4157-bea8-2b321eb00571
+			column: opening_shortname
+
+		level opening_variation
+			lineageTag: 1519e87b-9ff4-4330-8e5e-99326bf65fb8
+			column: opening_variation
+
+	partition chess_games = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Admin\Desktop\Self DEV\BI\Projects\chess_games.csv"),[Delimiter=",", Columns=17, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"game_id", Int64.Type}, {"rated", type logical}, {"turns", Int64.Type}, {"victory_status", type text}, {"winner", type text}, {"time_increment", type text}, {"white_id", type text}, {"white_rating", Int64.Type}, {"black_id", type text}, {"black_rating", Int64.Type}, {"moves", type text}, {"opening_code", type text}, {"opening_moves", Int64.Type}, {"opening_fullname", type text}, {"opening_shortname", type text}, {"opening_response", type text}, {"opening_variation", type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"opening_response", Text.Proper, type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Capitalized Each Word","Refused","Declined",Replacer.ReplaceText,{"opening_response"}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Replaced Value", "time_increment", "time_increment - Copy"),
+				    #"Extracted Text Before Delimiter" = Table.TransformColumns(#"Duplicated Column", {{"time_increment - Copy", each Text.BeforeDelimiter(_, "+"), type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Extracted Text Before Delimiter",{{"time_increment - Copy", "time_without_increment"}}),
+				    #"Duplicated Column1" = Table.DuplicateColumn(#"Renamed Columns", "time_increment", "time_increment - Copy"),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Duplicated Column1",{{"time_increment - Copy", "increment"}}),
+				    #"Extracted Text After Delimiter" = Table.TransformColumns(#"Renamed Columns1", {{"increment", each Text.AfterDelimiter(_, "+"), type text}}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Extracted Text After Delimiter",{{"increment", Int64.Type}, {"time_without_increment", Int64.Type}}),
+				    #"Added Custom" = Table.AddColumn(#"Changed Type1", "game type (Lichess standards)", each if ([time_without_increment] * 60 + 40 * [increment]) <= 29 then "UltraBullet"
+				else if ([time_without_increment] * 60 + 40 * [increment]) <= 179 then "Bullet"
+				else if ([time_without_increment] * 60 + 40 * [increment]) <= 479 then "Blitz"
+				else if ([time_without_increment] * 60 + 40 * [increment]) <= 1499 then "Rapid"
+				else "Classical"),
+				    #"Renamed Columns2" = Table.RenameColumns(#"Added Custom",{{"increment", "increment (s)"}, {"time_without_increment", "time_without_increment (min)"}, {"game type (Lichess standards)", "game_type (Lichess standards)"}}),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Renamed Columns2",{"game_id", "rated", "turns", "victory_status", "winner", "game_type (Lichess standards)", "time_increment", "white_id", "white_rating", "black_id", "black_rating", "moves", "opening_code", "opening_moves", "opening_fullname", "opening_shortname", "opening_response", "opening_variation", "time_without_increment (min)", "increment (s)"}),
+				    #"Sorted Rows" = Table.Sort(#"Reordered Columns",{{"time_increment", Order.Ascending}}),
+				    #"Added Custom1" = Table.AddColumn(#"Sorted Rows", "who won?", each if [white_rating] = [black_rating] then
+				    if [winner] = "Draw" then "Draw"
+				    else "Equal Rating"
+				else if [winner] = "Draw" then "Draw"
+				else if ([winner] = "White" and [white_rating] > [black_rating])
+				    or ([winner] = "Black" and [black_rating] > [white_rating])
+				then "Higher Rated"
+				else "Lower Rated"),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Added Custom1",{{"who won?", type text}}),
+				    #"Added Custom2" = Table.AddColumn(#"Changed Type2", "rating difference", each [white_rating] - [black_rating]),
+				    #"Inserted Absolute Value" = Table.AddColumn(#"Added Custom2", "Absolute Value", each Number.Abs([rating difference]), type number),
+				    #"Removed Columns" = Table.RemoveColumns(#"Inserted Absolute Value",{"rating difference"}),
+				    #"Renamed Columns3" = Table.RenameColumns(#"Removed Columns",{{"Absolute Value", "rating difference"}}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Renamed Columns3","","Unspecified Variation",Replacer.ReplaceValue,{"opening_variation"}),
+				    #"Sorted Rows1" = Table.Sort(#"Replaced Value1",{{"game_id", Order.Ascending}}),
+				    #"Changed Type3" = Table.TransformColumnTypes(#"Sorted Rows1",{{"game_type (Lichess standards)", type text}, {"rated", type text}}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Changed Type3","false","Friendly",Replacer.ReplaceText,{"rated"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","true","Rated",Replacer.ReplaceText,{"rated"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","King's Pawn Opening","King's Pawn Game",Replacer.ReplaceText,{"opening_shortname"}),
+				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","King's Pawn","King's Pawn Game",Replacer.ReplaceText,{"opening_shortname"}),
+				    #"Replaced Value6" = Table.ReplaceValue(#"Replaced Value5","Queen's pawn","Queen's Pawn Game",Replacer.ReplaceText,{"opening_shortname"}),
+				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","Queen's Pawn","Queen's Pawn Game",Replacer.ReplaceText,{"opening_shortname"}),
+				    #"Replaced Value8" = Table.ReplaceValue(#"Replaced Value7","Queen's Pawn Game Game","Queen's Pawn Game",Replacer.ReplaceText,{"opening_shortname"}),
+				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","King's Pawn Game Game","King's Pawn Game",Replacer.ReplaceText,{"opening_shortname"}),
+				    #"Sorted Rows2" = Table.Sort(#"Replaced Value9",{{"opening_shortname", Order.Descending}}),
+				    #"Replaced Value10" = Table.ReplaceValue(#"Sorted Rows2","Nimzowitsch-Larsen Attack","Nimzo-Larsen Attack",Replacer.ReplaceText,{"opening_shortname"}),
+				    #"Sorted Rows3" = Table.Sort(#"Replaced Value10",{{"game_id", Order.Ascending}})
+				in
+				    #"Sorted Rows3"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
